@@ -25,6 +25,10 @@ import { KiraraWeb } from "manga-time-kirara-util";
 KiraraWeb.fetchComicInformations().then(...);
 ```
 
+## API
+
+[API Document](https://narazaka.github.io/manga-time-kirara-util.js/)
+
 ## License
 
 This is released under [MIT License](https://narazaka.net/license/MIT?2017).

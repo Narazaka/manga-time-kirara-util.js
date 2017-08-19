@@ -9,7 +9,9 @@
   ],
   "scripts": {
     "dist": "rimraf dist && tsc",
-    "prepublish": "npm run dist"
+    "prepublish": "npm run dist",
+    "docdist": "cd doc && git clean -fd && git rm -rf * && cd .. && npm run doc && cd doc && touch .nojekyll && git add . && git commit -m doc && git push",
+    "doc": "typedoc --mode modules --out doc --readme Readme.md --name \"API Document\" --disableOutputCheck --excludeNotExported src && cd doc && git status && cd .."
   },
   "dependencies": {
     "cheerio-httpcli": "^0.7.0"
@@ -17,6 +19,7 @@
   "devDependencies": {
     "@types/node": "^8.0.24",
     "rimraf": "^2.6.1",
+    "typedoc": "^0.8.0",
     "typescript": "^2.4.2"
   },
   "author": "Narazaka",
