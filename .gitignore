@@ -1,0 +1,7 @@
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+node_modules
+npm-debug.log
+yarn-error.log
+yarn.lock
+dist

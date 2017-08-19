@@ -1,0 +1,29 @@
+{
+  "name": "manga-time-kirara-util",
+  "version": "0.0.1",
+  "description": "まんがタイムきららについて色々",
+  "main": "./dist/lib/index.js",
+  "types": "./dist/lib/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dist": "rimraf dist && tsc",
+    "prepublish": "npm run dist"
+  },
+  "dependencies": {
+    "cheerio-httpcli": "^0.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.24",
+    "rimraf": "^2.6.1",
+    "typescript": "^2.4.2"
+  },
+  "author": "Narazaka",
+  "license": "MIT",
+  "url": "https://github.com/Narazaka/manga-time-kirara-util.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Narazaka/manga-time-kirara-util.js.git"
+  }
+}
