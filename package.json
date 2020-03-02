@@ -20,7 +20,7 @@
     "@types/node": "^8.0.24",
     "rimraf": "^2.6.1",
     "typedoc": "^0.8.0",
-    "typescript": "^2.4.2"
+    "typescript": "^3.8.3"
   },
   "author": "Narazaka",
   "license": "MIT",
